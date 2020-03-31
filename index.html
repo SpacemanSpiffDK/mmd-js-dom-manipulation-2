@@ -1,35 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Spaceman Spiff | boilerplate</title>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="assets/css/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link href="assets/css/frappe.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/script.js" async defer></script>
 </head>
+
 <body>
+    <header>
+        <nav class="flex">
+            <a href="#" class="button-menu"><i class="fas fa-bars"></i></a>
+            <span class="title">VR News</span>
+            <a href="#" class="button-user"><i class="fas fa-user"></i></a>
+        </nav>
+    </header>
+
     <main>
-        <article class="color-surface padding-l">
-            <h1>Headline</h1>
-            <div class="flex">
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
-                    <a href="#" class="btn padding-m">Test button</a>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores quibusdam ipsam quisquam quod maiores molestiae perferendis temporibus impedit? Et ipsum autem nobis, labore aspernatur recusandae in qui saepe blanditiis?</p>
-                    <a href="#" class="btn mwa padding-m">Test button</a>
-                </div>
+        <div class="hero">
+            <h1>HTC Vive</h1>
+            <p>VR review</p>
+        </div>
+        <article>
+            <div class="padding-m">
+                <h2>By Adi Robertson | Photography by James Bareham</h2>
+                <p>One month ago, I tested a virtual reality headset called the HTC Vive Pre. The Pre was a development
+                    kit created by gaming behemoth Valve and smartphone maker HTC, and it was one of the most exciting
+                    new pieces of hardware I’ve had the pleasure of writing about — a device that offered full-body,
+                    room-scale VR.</p>
+            </div>
+            <div class="padding-m color-secondary">
+                <h2>Consumer release</h2>
+                <p>The headset above is not the Vive Pre. It’s the final consumer edition Vive that’s coming out today,
+                    although it looks almost identical — the branding is new, and the small focus rod on the bottom is
+                    ridged instead of smooth, but I still sometimes worry I’m picking up the wrong set by accident.
+                    What’s changed is the context. The Pre was an obviously unfinished device that never went on sale,
+                    complete with software glitches and half-finished games. The Vive is a real piece of consumer
+                    hardware that you can go online and pay $800 for right this minute. It’s coming out a week after the
+                    Oculus Rift, a competing headset with impeccable polish but limited ambition. So expectations for
+                    the Vive are high — and the headset both exceeds and falls short of them.</p>
+            </div>
+            <div class="article-image lighthouses"></div>
+            <div class="padding-m">
+                <h2>Roomscale VR</h2>
+                <p>Since its first prototype was announced in early 2015, the Vive has been very clearly a full VR
+                    system, not just a headset. Besides its heavy black goggles, the system includes a pair of wireless
+                    motion controllers shaped like cupholders on sticks, and two "lighthouse" towers that are placed at
+                    opposite corners of a room, shooting fields of lasers for motion tracking. The Vive grew out of a
+                    prototype at Valve, and while the remotes don’t look much like gaming hardware, they’re designed
+                    like a slimmed-down, split-up version of the company’s more traditional Steam Controller. Each one
+                    has a clicky front trigger, a pair of side bumpers that you can press by squeezing tightly, two top
+                    buttons, and a smooth trackpad.</p>
+
+            </div>
+            <div class="article-image controllers"></div>
+            <div class="padding-m color-secondary">
+                <h2>The controllers</h2>
+                <p>The Steam Controller’s trackpad was originally meant to give PC gamers mouse-like precision on a
+                    console-style controller, but on the Vive controllers, it could easily be replaced by an ordinary
+                    d-pad for most of the experiences I’ve tried. The best argument for it is aesthetic: it’s the
+                    trackpad that elevates the Vive controller design from fancy Wii Remote to something truly
+                    futuristic; each pad a beautiful little circle that looks like a cyberpunk data chip or a pan of
+                    expensive eyeshadow. And adding an interface element that’s foreign to almost everyone is a great
+                    signal that the Vive isn’t just for people who know their way around a controller.</p>
             </div>
         </article>
+        <aside>
+            <div class="padding-s color-surface">
+                <h2>Related articles</h2>
+                <div class="flex flex-wrap related-articles-list">
+                    <div class="image image-article-1"></div>
+                    <div class="text">
+                        <h3>Google Cardboard Open Source</h3>
+                        <div class="info">No more mobile VR?</div>
+                    </div>
+                    <div class="image image-article-2"></div>
+                    <div class="text">
+                        <h3>British Airways test VR on First class</h3>
+                        <div class="info">2D and 3D entertainment</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside>
+            <div class="padding-m newsletter">
+                <h2>Subscribe to our newsletter</h2>
+                <p>You will always be up to date with the latest developments in the field</p>
+                <input type="email" placeholder="your@email.here">
+                <input class="btn mwa" type="submit" value="Subscribe">
+            </div>
+        </aside>
     </main>
+
+    <footer>
+        <h2>VR News</h2>
+        <p>Text and images from several articles on The Verge</p>
+        <div class="icon-wrapper flex">
+            <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </footer>
 </body>
 <!--
     HTML by Dan Høegh
-    UCN MMD 2020
+    UCN MMD 2019
 -->
 </html>
