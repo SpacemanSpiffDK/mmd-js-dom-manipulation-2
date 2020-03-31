@@ -3,7 +3,7 @@
 
 function darkModeToggle(){
     // In this function we turn darkmode on if it is off and vice versa
-    if (darkModeCssIsPresent() === false){ // test if darkmode is off
+    if (!darkModeCssIsPresent()){ // test if darkmode is off
         // dark mode is off, turn it on by adding extra stylesheet
         let darkStyle = document.createElement('link');
         darkStyle.href = "assets/css/darkmode.css";
