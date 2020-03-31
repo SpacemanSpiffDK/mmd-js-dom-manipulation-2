@@ -1,0 +1,22 @@
+:root {
+	/* color variables */
+	--frappe-color-primary: #007940;
+	--frappe-color-secondary: rgb(46, 45, 45);
+	--frappe-color-accent: #2b2f68;
+	--frappe-color-surface: #202020;
+	--frappe-color-background: rgb(4, 108, 124);
+
+	--frappe-color-on-primary: #c3c3c3;
+	--frappe-color-on-secondary: #bdbdbd;
+	--frappe-color-on-accent: #ffffff;
+	--frappe-color-on-surface: #d8d8d8;
+}
+
+body {
+	color: var(--frappe-color-primary);
+}
+
+input[type="email"]{
+	background-color: var(--frappe-color-background);
+	color: var(--frappe-color-on-surface);
+}

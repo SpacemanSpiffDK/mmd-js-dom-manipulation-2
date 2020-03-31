@@ -1,2 +1,40 @@
 // JS by Dan Høegh
 // UCN MMD 2020
+
+function darkModeToggle(){
+    // In this function we turn darkmode on if it is off and vice versa
+    if (darkModeCssIsPresent() === false){ // test if darkmode is off
+        // dark mode is off, turn it on by adding extra stylesheet
+        let darkStyle = document.createElement('link');
+        darkStyle.href = "assets/css/darkmode.css";
+        darkStyle.rel = "stylesheet";
+        darkStyle.type = "text/css";
+        darkStyle.id = "darkModeCssLink";
+        document.head.appendChild(darkStyle);
+    } else {
+        // if dark mode is on, then turn it off by removing the <link> tag in head
+        let darkCssLink = document.querySelector('#darkModeCssLink');
+        document.head.removeChild(darkCssLink);
+    }
+}
+
+function darkModeCssIsPresent(){
+    // In this function we see if the dark mode css 
+    // is present in the document
+    let found = false; // the default value is "false", since we haven't found anything yet
+    let darkCssLink = document.querySelector('#darkModeCssLink'); // grab the element
+    // console.log(darkCssLink); // what do we get when we grab the element?
+    if (darkCssLink){
+        // ^^ this if-sentence checks if darkCssLink is "null", 
+        // "null" is the same as false in this case
+        // if we find the element, then it is true
+        found = true; // we found the element, let's update our "found" variable with that information
+    }
+    return found; // return the value to who ever did the call for this function
+}
+
+// add eventlistener to the button in the HTML
+document.querySelector('#btnMode').addEventListener('click', function(event){
+    event.preventDefault(); // prevents adding a "#" to the url when the link is clicked
+    darkModeToggle();
+});

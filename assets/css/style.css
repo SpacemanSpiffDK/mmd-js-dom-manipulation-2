@@ -47,6 +47,10 @@ body {
 	box-shadow: var(--frappe-shadow-depressed);
 }
 
+.btn-a {
+	padding: var(--frappe-density-s) var(--frappe-density-m);
+}
+
 h1 {
 	margin-bottom: var(--frappe-density-m);
 }
