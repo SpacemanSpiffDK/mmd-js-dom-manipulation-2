@@ -39,12 +39,21 @@ document.querySelector('#btnMode').addEventListener('click', function(event){
     darkModeToggle();
 });
 
+// we can read values of an elements css
+let elmHero = document.querySelectorAll('.hero');
+console.log(elmHero[0].style);
+
 let buttonColorIsActive = false; // creating a status variable so we can easily check if button color is default or changed
 function buttonColor(element){
     if (buttonColorIsActive){
         element.style.backgroundColor = "";
     } else {
-        element.style.backgroundColor = "rgba(0,0,0,1)";
+        element.style.backgroundColor = "rgba(0,0,0,.7)";
+        element.style.borderColor = "#00ffff";
+        element.style.borderWidth = "2px";
+        element.style.borderStyle = "solid";
+        element.style.color = "yellow";
+        //element.style = "color: yellow"; // this replace all the content in the style attribute
     }
     // every time we click the button, we want the status to change to the opposite (true/false)
     buttonColorIsActive = !buttonColorIsActive; // this reverses the value of the boolean variable
