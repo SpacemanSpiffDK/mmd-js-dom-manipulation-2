@@ -33,8 +33,25 @@ function darkModeCssIsPresent(){
     return found; // return the value to who ever did the call for this function
 }
 
-// add eventlistener to the button in the HTML
+// add eventlistener to the dark mode button in the HTML
 document.querySelector('#btnMode').addEventListener('click', function(event){
     event.preventDefault(); // prevents adding a "#" to the url when the link is clicked
     darkModeToggle();
+});
+
+let buttonColorIsActive = false; // creating a status variable so we can easily check if button color is default or changed
+function buttonColor(element){
+    if (buttonColorIsActive){
+        element.style.backgroundColor = "";
+    } else {
+        element.style.backgroundColor = "rgba(0,0,0,1)";
+    }
+    // every time we click the button, we want the status to change to the opposite (true/false)
+    buttonColorIsActive = !buttonColorIsActive; // this reverses the value of the boolean variable
+}
+
+// add eventlistener to the font toggle button in the HTML
+document.querySelector('#btnColor').addEventListener('click', function(event){
+    event.preventDefault(); // prevents adding a "#" to the url when the link is clicked
+    buttonColor(this);
 });
